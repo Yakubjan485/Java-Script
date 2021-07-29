@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Java scriptda kalkulyator</title>
+     <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+     <link rel="stylesheet" href="Bootstrap/css/kalkulyator.css">
+</head>
+<body>
+
+     <div class="container">
+          <div class="row">
+               <div class="col-lg-4 col-8 offset-2">
+                    <div class="card">
+   
+                         <div class="card-header">
+                              <input type="text" id="result" disabled value="0" class="form-control text-right">
+                         </div> <!--card header-->
+                         <!--  -->
+                         <div class="card-body">
+                              <div class="row">
+                                   <div class="col-12">
+                                        <button type="button" class="btn btn-danger" onclick="clearScreen()">C</button>
+                                   </div> <!--col 12-->
+                                   <!--  -->
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-success" onclick="addNumber(1)">1</button>
+                                   </div> <!--col 3-->
+                                   <!--  -->
+                                   <div class="col-3">
+                                      <button type="button" class="btn btn-success" onclick="addNumber(2)">2</button>
+                                 </div> <!--col 3-->
+                                 <!--  -->
+                                 <div class="col-3">
+                                      <button type="button" class="btn btn-success" onclick="addNumber(3)">3</button>
+                                 </div> <!--col 3-->
+                                 <!--  -->
+                                 <div class="col-3">
+                                      <button type="button" class="btn btn-primary" onclick="amal('add')">+</button>
+                                 </div> <!--col 3-->
+                                 <!--  -->
+                                 <div class="col-3">
+                                      <button type="button" class="btn btn-success" onclick="addNumber(4)">4</button>
+                                 </div> <!--col 3-->
+                                 <!--  -->
+                                 <div class="col-3">
+                                    <button type="button" class="btn btn-success" onclick="addNumber(5)">5</button>
+                               </div> <!--col 3-->
+                               <!--  -->
+                               <div class="col-3">
+                                    <button type="button" class="btn btn-success" onclick="addNumber(6)">6</button>
+                               </div> <!--col 3-->
+                               <!--  -->
+                               <div class="col-3">
+                                    <button type="button" class="btn btn-primary" onclick="amal('subtract')">-</button>
+                               </div> <!--col 3-->
+                               <!--  -->
+                               <div class="col-3">
+                                 <button type="button" class="btn btn-success" onclick="addNumber(7)">7</button>
+                            </div> <!--col 3-->
+                            <!--  -->
+                            <div class="col-3">
+                               <button type="button" class="btn btn-success" onclick="addNumber(8)">8</button>
+                          </div> <!--col 3-->
+                          <!--  -->
+                          <div class="col-3">
+                               <button type="button" class="btn btn-success" onclick="addNumber(9)">9</button>
+                          </div> <!--col 3-->
+                          <!--  -->
+                          <div class="col-3">
+                               <button type="button" class="btn btn-primary" onclick="amal('multiply')">*</button>
+                          </div> <!--col 3-->
+                          <!--  -->
+                          <div class="col-3">
+                            <button type="button" class="btn btn-success" onclick="addNumber(0)">0</button>
+                       </div> <!--col 3-->
+                       <!--  -->
+                       <div class="col-3">
+                          <button type="button" class="btn btn-success" onclick="addNumber('.')">.</button>
+                     </div> <!--col 3-->
+                     <!--  -->
+                     <div class="col-3">
+                          <button type="button" class="btn btn-success" onclick="equal()">=</button>
+                     </div> <!--col 3-->
+                     <!--  -->
+                     <div class="col-3">
+                          <button type="button" class="btn btn-primary" onclick="amal('divide')">/</button>
+                     </div> <!--col 3-->
+                      <!--col <div class="col-3">
+                          <button type="button" class="btn btn-secondary" onclick="amal ('status')">></button>
+                     </div>3-->
+                     <!--  -->
+                     <div class="col-3">
+                          <button type="button" class="btn btn-secondary" onclick="left()">></button>
+                     </div>
+                     <!--  -->
+                     <div class="col-3">
+                       <button type="button" class="btn btn-light" onclick="amal ('degree')">x2</button>
+                  </div> <!--col 3-->
+                  <!--  -->
+                  <div class="col-3">
+                       <button type="button" class="btn btn-light" onclick="amal ('pow')">pow</button>
+   
+                  </div> <!--col 3-->
+                  <!--  -->
+                  <div class="col-3">
+                       <button type="button" class="btn btn-secondary" onclick="amal ('sin')" >!x</button>
+                  </div> <!--col 3-->
+                              </div> <!--row-->
+                         </div> <!--card body-->
+                    </div> <!--card-->
+               </div> <!--col 4-->
+          </div> <!--row-->
+          <div class="row">
+               <div class="col-6 offset-3 mt-5">
+                    <a href="credit.html" class="text-decoration-none text-success">Oldingi sahifaga o'tish</a>
+                   
+               </div>
+          </div>
+     </div> <!--container-->
+
+     
+
+
+
+
+
+     <script src="Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+     <script src="Bootstrap/js/popper.min.js"></script>
+     <script src="Bootstrap/js/bootstrap.js"></script>
+     <script src="Bootstrap/js/kalkulyator.js"></script>
+
+     
+</body>
+</html>

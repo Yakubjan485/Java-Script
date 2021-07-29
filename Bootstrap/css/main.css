@@ -1,0 +1,29 @@
+
+body {
+  margin-top: 200px;
+}
+textarea {
+  resize: none !important;
+}
+.btn {
+  width: 100%;
+}
+.task {
+  box-shadow: 0 0 10px #000;
+  width: 100%;
+  display: block;
+  padding: 4px 10px;
+  margin-bottom: 15px;
+} 
+p {
+  margin-top: -100px;
+  color: red;
+  font-weight: bolder;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-weight: bolder;
+  margin-top: 20px;
+}

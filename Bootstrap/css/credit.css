@@ -1,0 +1,16 @@
+
+body {
+     margin-top: 150px;
+     margin-bottom: 30px;
+     overflow-x: hidden;
+}
+p {
+     font-size: 22px;
+}
+a {
+     font-size: 22px;
+     margin-right: 40px;
+}
+.margin {
+     margin-bottom: 30px;
+}

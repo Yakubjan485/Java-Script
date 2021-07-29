@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+     <link rel="stylesheet" href="Bootstrap/css/just.css">
+     <title>Just</title>
+</head>
+<body>
+
+     <div class="container">
+          <a href="index.html" target="_blank">to dolist</a>
+          <a href="credit.html" target="_blank">Credit</a>
+          <a href="kalkulyator.html" target="_blank">Kalkulyator</a>
+     </div>
+     
+     <!-- <div class="container mt-5">
+          <div class="row">
+               <div class="col-4 offset-4">
+                    <div class="card">
+                         <div class="card-header">
+                              <input type="text" id="result" disabled value="0" class="form-control text-center">
+                         </div>
+                         <div class="card-body">
+                              <div class="row">
+                                   <div class="col-12">
+                                        <button type="button" class="btn btn-danger" onclick="clearScreen()">C</button>
+                                   </div>
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-success" onclick="number(1)">1</button>
+                                   </div>
+                                   
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-success" onclick="number(2)">2</button>
+                                   </div>
+                                   
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-success" onclick="number(3)">3</button>
+                                   </div>
+                                   
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-primary" onclick="amal('add')">+</button>
+                                   </div>
+                                   
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-success" onclick="number(4)">4</button>
+                                   </div>
+                                  
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-success" onclick="number(5)">5</button>
+                                   </div>
+                                   
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-success" onclick="number(6)">6</button>
+                                   </div>
+                                   
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-primary" onclick="amal('minus')">-</button>
+                                   </div>
+                                   
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-success" onclick="number(7)">7</button>
+                                   </div>
+                                   
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-success" onclick="number(8)">8</button>
+                                   </div>
+                                   
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-success" onclick="number(9)">9</button>
+                                   </div>
+                                   
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-primary" onclick="amal('multiply')">*</button>
+                                   </div>
+                                   
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-success" onclick="number(0)">0</button>
+                                   </div>
+                                   
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-success" onclick="number('.')">.</button>
+                                   </div>
+                                   
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-success" onclick="equal()">=</button>
+                                   </div>
+                                   
+                                   <div class="col-3">
+                                        <button type="button" class="btn btn-primary" onclick="amal('divide')">/</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>  -->
+    
+     <!-- stop calculator -->
+
+
+     <div class="container mt-5 mb-5">
+          <!--  -->
+          <!-- <div class="row">
+               <div class="col-6 offset-3">
+                    <p>Java scriptda To do listning bir oz sodda ko'rinishi</p>
+               </div>
+          </div> -->
+     
+          <div class="row">
+               <div class="col-lg-3 col-6">
+                    <button type="button" class="btn btn-success btn-block" onclick="showCard()">Tugmani bosing</button>
+                    <div class="card mt-3 d-none" id="add-card">
+                         <div class="card-body">
+                              <textarea id="board-title" class="form-control"
+                                   placeholder="Ihtiyoriy so'zlar kiritilsin "></textarea>
+                              <button type="button" class="btn btn-success mt-3 d-block ml-auto"
+                                   onclick="addBoard()">Qo'shish</button>
+                         </div>
+                         <!--card body-->
+                    </div>
+                    <!--card-->
+               </div>
+               <!--col 3-->
+               <div class="col-9">
+                    <div class="row" id="result"></div>
+               </div>
+          </div>
+          <!--row-->
+     
+          <div class="row">
+               <div class="col-8 offset-2 mt-5">
+                    <a href="credit.html">Keyingi sahifaga o'tish</a>
+               </div>
+          </div>
+     </div>
+     <!--container-->
+  
+
+
+     <script src="Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+     <script src="Bootstrap/js/popper.min.js"></script>
+     <script src="Bootstrap/js/bootstrap.js"></script>
+     <script src="Bootstrap/js/just.js"></script>
+
+</body>
+</html>

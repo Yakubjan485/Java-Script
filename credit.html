@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Kredit summa hisoblash</title>
+     <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+     <link rel="stylesheet" href="Bootstrap/css/credit.css">
+</head>
+<body>
+     
+     <div class="container">
+
+          <div class="row">
+               <div class="col-4 offset-4 mt-5 mb-5 text-danger">
+                    <p>Java Scriptda Bank kredit hisoblash</p>
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="col-lg-8  col-12">
+                    <div class="card">
+
+                         <div class="card-header">
+                              Credit Calculator
+                         </div> <!--card header-->
+                         <!--  -->
+                         <div class="card-body">
+                              <div class="row">
+                                   <div class="col-lg-6 col-12">
+                                        <label for="kreditSum">Kredit summa</label>
+                                        <input type="number" class="form-control" id="kreditSum">
+                                        <!--  -->
+                                        <label for="yearPercent">Yillik foiz</label>
+                                        <select id="yearPercent" class="form-control">
+                                             <option value="12">12%</option>
+                                             <option value="13">13%</option>
+                                             <option value="14">14%</option>
+                                             <option value="15">15%</option>
+                                             <option value="16">16%</option>
+                                             <option value="20">20%</option>
+                                        </select>
+                                        <!--  -->
+                                        <label for="year">Kalendar yil</label>
+                                        <select id="year" class="form-control">
+                                             <option value="2020">2020-yil</option>
+                                             <option value="2021">2021-yil</option>
+                                             <option value="2022">2022-yil</option>
+                                             <option value="2023">2023-yil</option>
+                                             <option value="2024">2024-yil</option>
+                                        </select>
+                                   </div> <!--col 6-->
+                                   <!--  -->
+                                   <div class="col-lg-6 col-12">
+                                        <label for="startPaymentPercent">Boshlang'ich to'lov foizi</label>
+                                        <select id="startPaymentPercent" class="form-control">
+                                             <option value="20">20%</option>
+                                             <option value="25">25%</option>
+                                             <option value="30">30%</option>
+                                             <option value="40">40%</option>
+                                             <option value="50">50%</option>
+                                        </select>
+                                        <!--  -->
+                                        <label for="yearMuddat">Yillik muddat</label>
+                                        <select id="yearMuddat" class="form-control">
+                                             <option value="1">1 yil</option>
+                                             <option value="2">2 yil</option>
+                                             <option value="3">3 yil</option>
+                                             <option value="4">4 yil</option>
+                                             <option value="5">5 yil</option>
+                                             <option value="10">10 yil</option>
+                                             <option value="20">20 yil</option>
+                                        </select>
+                                        <!--  -->
+                                        <label for="month">Kalendar oy</label>
+                                        <select id="month" class="form-control">
+                                             <option value="0">Yanvar</option>
+                                             <option value="1">Fevral</option>
+                                             <option value="2">Mart</option>
+                                             <option value="3">Aprel</option>
+                                             <option value="4">May</option>
+                                             <option value="5">Iyun</option>
+                                             <option value="6">Iyul</option>
+                                             <option value="7">Avgust</option>
+                                             <option value="8">Sentabr</option>
+                                             <option value="9">Oktabr</option>
+                                             <option value="10">Noyabr</option>
+                                             <option value="11">Dekabr</option>
+                                        </select>
+                                        <button type="button" class="btn btn-success btn-block mt-3" onclick="calc()">Hisoblash</button>
+
+                                   </div> <!--col 6-->
+                              </div> <!--row-->
+                              
+
+
+                         </div> <!--card body-->
+                    </div> <!--card-->
+                    <!--  -->
+                    <div class="card">
+
+                        <div class="card-header">
+                         Kredit kalendar
+                        </div> <!--card header-->
+                        <!--  -->
+                        <div class="card-body">
+                             <div class="row">
+                                  <div class="col-4">
+                                      <h5>Boshlang'ich to'lov summasi</h5>
+                                      <p id="startPayment">0</p>
+
+                                  </div> <!--col 4-->
+                                  <!--  -->
+                                  <div class="col-4">
+                                   <h5>Berilgan kredit summasi</h5>
+                                   <p id="givenPayment">0</p>
+
+                               </div> <!--col 4-->
+                               <!--  -->
+                               <div class="col-4">
+                                   <h5>Oylik to'lovi</h5>
+                                   <p id="monthPayment">0</p>
+
+                               </div> <!--col 4-->
+                             </div> <!--row -->
+                             <table class="table table-striped table-hover ">
+                                  <thead>
+                                       <tr>
+                                            <th>№</th>
+                                            <th>Yil</th>
+                                            <th>Oy</th>
+                                            <th>Asosiy qarz</th>
+                                            <th>Oylik to'lov</th>
+                                            <th>Foiz to'lov</th>
+                                            <th>Umumiy</th>
+                                       </tr>
+                                  </thead>
+                                  <tbody id="result"></tbody>
+                             </table>
+                        </div>
+                    </div> <!--card -->
+               </div> <!--col 8-->
+          </div> <!--row -->
+
+          <div class="row">
+               <div class="col-8 offset-2 mt-5 margin">
+                    <a href="index.html" class="text-decoration-none text-success d-block mb-5">Oldingi sahifaga o'tish</a>
+                    <a href="kalkulyator.html" class="text-decoration-none text-primary d-block" >Kelasi sahifaga o'tish</a>
+               </div>
+          </div>
+     </div> <!--container-->
+
+
+     
+
+     <script src="Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+     <script src="Bootstrap/js/popper.min.js"></script>
+     <script src="Bootstrap/js/bootstrap.js"></script>
+     <script src="Bootstrap/js/credit.js"></script>
+
+</body>
+</html>
